@@ -1,5 +1,5 @@
 # MoeKoe LARGER Close Button
-[![icon](icons/icon.svg)](#readme)
+[![icon](icon.png)](#readme)
 
 
 [MoeKoe Music](https://github.com/MoeKoeMusic/MoeKoeMusic) 插件, 让窗口的关闭按钮更大
@@ -13,3 +13,4 @@
 
 ## 特别鸣谢
 - [JoeYe-233/QQNT-LARGER-Close-Button](https://github.com/JoeYe-233/QQNT-LARGER-Close-Button): 灵感来源/图标来源
+- [MoeKoeMusic/moekoe-helper](https://github.com/MoeKoeMusic/moekoe-helper): 基于此示例插件修改
