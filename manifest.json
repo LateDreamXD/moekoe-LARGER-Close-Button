@@ -1,13 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "MoeKoe Music Helper",
-  "version": "1.0.0",
-  "description": "MoeKoe Music 助手插件 - 提供歌词翻译、音乐识别等功能",
-  "permissions": [
-    "storage",
-    "activeTab",
-    "scripting"
-  ],
+  "name": "扩大关闭按钮",
+  "version": "0.0.1",
+  "description": "把原先那一点点大的关闭按钮弄大一些",
+  "permissions": ["activeTab", "scripting"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -15,16 +11,11 @@
       "run_at": "document_end"
     }
   ],
-  "background": {
-    "service_worker": "background.js"
-  },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "MoeKoe Music 助手"
+    "default_title": "扩大关闭按钮 - 插件配置"
   },
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "icon.png"
   }
 }

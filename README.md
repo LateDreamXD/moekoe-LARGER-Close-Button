@@ -1,55 +1,15 @@
-# MoeKoe Music Helper [示例插件]
+# MoeKoe LARGER Close Button
+[![icon](icons/icon.svg)](#readme)
 
-MoeKoe Music Helper 是一个为 MoeKoe Music 放器设计的浏览器扩展插件，提供歌词翻译、音乐识别等便捷功能，提升你的音乐体验。
 
-## 功能特性
-
-- **实时显示当前播放的音乐信息**（歌曲名、艺术家、专辑、时长）
-- **一键翻译歌词**（支持模拟翻译，可集成真实翻译 API）
-- **音乐识别**（模拟识别，可扩展为接入第三方识别服务）
-- **快捷键支持**（如 Ctrl+Shift+H 显示/隐藏控制面板）
-- **自动检测音乐播放状态**
-- **刷新音乐信息**
-
-## 文件结构
-
-```
-background.js         // 后台脚本，负责数据存储和消息处理
-content.js            // 内容脚本，注入网页，提取音乐信息
-manifest.json         // 插件清单文件
-popup.html            // 弹窗页面
-popup.js              // 弹窗逻辑脚本
-icons/                // 插件图标
-```
-
-## 安装方法
-
-1. 放置至MoeKoe Music `plugins` 的插件目录中
-2. 重启 MoeKoe Music
-
-## 使用说明
-
-- 点击插件图标，弹出窗口会显示当前音乐信息和操作按钮。
-- 点击“翻译歌词”可获取当前页面歌词并翻译。
-- 点击“识别音乐”可模拟识别当前播放的音乐。
-- 点击“刷新信息”可手动刷新音乐信息。
-- 在网页端可使用 `Ctrl+Shift+H` 快捷键显示/隐藏悬浮控制面板。
+[MoeKoe Music](https://github.com/MoeKoeMusic/MoeKoeMusic) 插件, 让窗口的关闭按钮更大
 
 ## 权限说明
+- `scripting`: 用于向页面注入样式
 
-- [`storage`](background.js )：用于保存插件设置
-- `activeTab`、`scripting`：用于与当前标签页交互
-- `<all_urls>`：内容脚本可在所有网页运行（可根据实际需求收窄范围）
+## 使用方法
+1. 下载 [Release](https://github.com/LateDreamXD/moekoe-LARGER-Close-Button/releases) 中的 `.zip` 文件解压至 MoeKoe Music 插件目录或者直接在 MoeKoe Music 设置-插件 中导入
+2. 或者直接克隆仓库到 MoeKoe Music 插件目录
 
-## 开发与扩展
-
-- 歌词翻译和音乐识别目前为模拟实现，可根据需要接入第三方 API。
-- 内容脚本通过选择器提取音乐信息，如需适配不同播放器可调整选择器规则。
-
-## 许可协议
-
-MIT License
-
----
-
-如有建议或问题，欢迎反馈与贡献！
+## 特别鸣谢
+- [JoeYe-233/QQNT-LARGER-Close-Button](https://github.com/JoeYe-233/QQNT-LARGER-Close-Button): 灵感来源/图标来源
